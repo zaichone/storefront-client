@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 
 function Profile() {
+  
     
     const [profile, setProfile] = useState({})
 

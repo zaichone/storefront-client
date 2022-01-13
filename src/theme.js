@@ -4,7 +4,7 @@ import { blue, pink } from "@mui/material/colors";
 // Create a theme instance.
 let theme = createTheme({
   palette: {
-    primary: {  main:'#0263e0'},
+    primary: {  main:'#f22f46'},
     secondary: pink,
   },
   typography: {

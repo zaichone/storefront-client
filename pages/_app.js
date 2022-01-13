@@ -10,7 +10,7 @@ import createEmotionCache from '../src/createEmotionCache';
 import '../styles/globals.scss'
 
 
-//import Layout from "../src/layouts/Layout";
+import Layout from "../src/layouts/Layout";
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
@@ -19,7 +19,7 @@ const liffId = process.env.NEXT_PUBLIC_LIFF_ID
 
 export default function MyApp(props) {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
-
+/*
   useEffect(async () => {
     const liff = (await import('@line/liff')).default
     try {
@@ -30,7 +30,7 @@ export default function MyApp(props) {
     if (!liff.isLoggedIn()) {
       liff.login();
     }
-  },[]);
+  },[]); */
 
   return (
     <CacheProvider value={emotionCache}>
@@ -40,9 +40,9 @@ export default function MyApp(props) {
       <ThemeProvider theme={theme}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
-        
+        <Layout>
         <Component {...pageProps} />
-        
+        </Layout>
       </ThemeProvider>
     </CacheProvider>
   );
