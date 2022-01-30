@@ -1,10 +1,32 @@
+$primary-color: #0263e0;
+
+@font-face {
+  font-family: "SF Thonburi";
+  src: url("/fonts/SFThonburi-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Thonburi";
+  src: url("/fonts/SFThonburi-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Thonburi";
+  src: url("/fonts/SFThonburi-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "SF Thonburi", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #f7f7f8;
 }
+
 
 a {
   color: inherit;

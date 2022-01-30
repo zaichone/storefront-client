@@ -23,9 +23,12 @@ export default function Header() {
           >
             <ChevronLeftIcon />
           </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1, color:'black', textAlign:'center' }}>
+          <Box>
+          <Typography variant="h1" component="div" display="block" sx={{ flexGrow: 1, color:'black', textAlign:'center' }}>
             Rocket
           </Typography>
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1, color:'black', textAlign:'center' }}>rocket.in.th/crm</Typography>
+          </Box>
           
           <IconButton
             size="large"
