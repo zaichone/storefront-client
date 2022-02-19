@@ -8,11 +8,11 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@line/liff": "^2.18.1",
     "@emotion/cache": "^11.7.1",
     "@emotion/react": "^11.7.1",
     "@emotion/server": "^11.4.0",
     "@emotion/styled": "^11.6.0",
+    "@line/liff": "^2.18.1",
     "@mui/icons-material": "^5.0.0-rc.1",
     "@mui/material": "^5.2.7",
     "babel-plugin-styled-components": "^2.0.2",
@@ -27,7 +27,10 @@
     "styled-components": "^5.3.3"
   },
   "devDependencies": {
-    "eslint": "8.6.0",
-    "eslint-config-next": "12.0.8"
+    "@types/react": "^17.0.39",
+    "eslint": "^8.9.0",
+    "eslint-config-next": "12.0.8",
+    "eslint-plugin-react": "^7.28.0",
+    "typescript": "^4.5.5"
   }
 }
